@@ -177,6 +177,7 @@ ATTRCMP	st.h	/^#define ATTRCMP(/;"	d
 ATTR_BLINK	st.h	/^	ATTR_BLINK      = 1 << 4,$/;"	e	enum:glyph_attribute
 ATTR_BOLD	st.h	/^	ATTR_BOLD       = 1 << 0,$/;"	e	enum:glyph_attribute
 ATTR_BOLD_FAINT	st.h	/^	ATTR_BOLD_FAINT = ATTR_BOLD | ATTR_FAINT,$/;"	e	enum:glyph_attribute
+ATTR_BOXDRAW	st.h	/^	ATTR_BOXDRAW    = 1 << 11,$/;"	e	enum:glyph_attribute
 ATTR_FAINT	st.h	/^	ATTR_FAINT      = 1 << 1,$/;"	e	enum:glyph_attribute
 ATTR_INVISIBLE	st.h	/^	ATTR_INVISIBLE  = 1 << 6,$/;"	e	enum:glyph_attribute
 ATTR_ITALIC	st.h	/^	ATTR_ITALIC     = 1 << 2,$/;"	e	enum:glyph_attribute
@@ -332,7 +333,7 @@ SEL_REGULAR	st.h	/^	SEL_REGULAR = 1,$/;"	e	enum:selection_type
 SHORTCUTS	st.1	/^.SH SHORTCUTS$/;"	s	title:ST
 SNAP_LINE	st.h	/^	SNAP_LINE = 2$/;"	e	enum:selection_snap
 SNAP_WORD	st.h	/^	SNAP_WORD = 1,$/;"	e	enum:selection_snap
-SRC	Makefile	/^SRC = st.c x.c$/;"	m
+SRC	Makefile	/^SRC = st.c x.c boxdraw.c$/;"	m
 ST	st.1	/^.TH ST 1 st\\-VERSION$/;"	t
 STCFLAGS	config.mk	/^STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)$/;"	m
 STCPPFLAGS	config.mk	/^STCPPFLAGS = -DVERSION=\\"$(VERSION)\\" -D_XOPEN_SOURCE=600$/;"	m
@@ -457,6 +458,10 @@ borderpx	config.def.h	/^static int borderpx = 2;$/;"	v	typeref:typename:int
 borderpx	config.h	/^static int borderpx = 2;$/;"	v	typeref:typename:int
 bot	st.c	/^	int bot;      \/* bottom scroll limit *\/$/;"	m	struct:__anon7c9e12dd0408	typeref:typename:int	file:
 boxdata	boxdraw_data.h	/^static const unsigned short boxdata[256] = {$/;"	v	typeref:typename:const unsigned short[256]
+boxdraw	config.def.h	/^const int boxdraw = 0;$/;"	v	typeref:typename:const int
+boxdraw.o	Makefile	/^boxdraw.o: config.h st.h boxdraw_data.h$/;"	t
+boxdraw_bold	config.def.h	/^const int boxdraw_bold = 0;$/;"	v	typeref:typename:const int
+boxdraw_braille	config.def.h	/^const int boxdraw_braille = 0;$/;"	v	typeref:typename:const int
 boxdraw_xinit	boxdraw.c	/^boxdraw_xinit(Display *dpy, Colormap cmap, XftDraw *draw, Visual *vis)$/;"	f	typeref:typename:void
 boxdrawindex	boxdraw.c	/^boxdrawindex(const Glyph *g)$/;"	f	typeref:typename:ushort
 bpress	x.c	/^bpress(XEvent *e)$/;"	f	typeref:typename:void

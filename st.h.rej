@@ -1,18 +1,7 @@
 --- st.h
 +++ st.h
-@@ -124,4 +124,4 @@ extern unsigned int tabspaces;
+@@ -135,3 +144,4 @@ extern unsigned int tabspaces;
  extern unsigned int defaultfg;
  extern unsigned int defaultbg;
  extern unsigned int defaultcs;
--extern float alpha, alphaUnfocused;
-+extern float alpha;
---- st.h
-+++ st.h
-@@ -79,7 +79,6 @@ typedef union {
- 
- void die(const char *, ...);
- void redraw(void);
--void tfulldirt(void);
- void draw(void);
- 
- void printscreen(const Arg *);
++extern const int boxdraw, boxdraw_bold, boxdraw_braille;
