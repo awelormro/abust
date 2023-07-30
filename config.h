@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Agave Nerd Font:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Mononoki Nerd Font:pixelsize=12:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -18,7 +18,7 @@ MonitorConfig monitors_config[] = {
 	//   <0 : auto relative points size (monitor dpi)
 	// {"DP-1", 0}, // BUG:(size=0): not restored to default after back'n'forth
 	{"HDMI-1", -22},  // BUG:(ignored DPI=220): = 20 is eqv to 10pt (DPI=110)
-	{"eDP-1", -14},
+	{"eDP-1", -12},
 };
 float winmovethreshold = 0.6;
 

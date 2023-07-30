@@ -53,7 +53,7 @@
 !_TAG_PARSER_VERSION!Make	0.0	/current.age/
 !_TAG_PARSER_VERSION!Man	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/home/abu/abust/	//
+!_TAG_PROC_CWD	/home/abu/Plantillas/abust/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
@@ -69,8 +69,10 @@
 $(OBJ)	Makefile	/^$(OBJ): config.h config.mk$/;"	t
 -0,0 +1,194	st-boxdraw_v2-0.8.5.diff	/^@@ -0,0 +1,194 @@$/;"	h	newFile:b/boxdraw.c
 -0,0 +1,214	st-boxdraw_v2-0.8.5.diff	/^@@ -0,0 +1,214 @@$/;"	h	newFile:b/boxdraw_data.h
+-103,6 +103,11	st-hidecursor-0.8.3.diff	/^@@ -103,6 +103,11 @@ typedef struct {$/;"	h	modifiedFile:a/x.c
 -105,6 +105,7	st-alpha-20220206-0.8.5.diff	/^@@ -105,6 +105,7 @@ typedef struct {$/;"	h	modifiedFile:a/x.c
 -105,6 +105,7	st-focus-20230610-68d1ad9.diff	/^@@ -105,6 +105,7 @@ typedef struct {$/;"	h	modifiedFile:a/x.c
+-1099,10 +1111,10	st-hidecursor-0.8.3.diff	/^@@ -1099,10 +1111,10 @@ void$/;"	h	modifiedFile:a/x.c
 -1104,8 +1118,6	st-xresources-20200604-9ba7ecf.diff	/^@@ -1104,8 +1118,6 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
 -1118,11 +1127,23	st-alpha-20220206-0.8.5.diff	/^@@ -1118,11 +1127,23 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
 -113,6 +114,14	st-boxdraw_v2-0.8.5.diff	/^@@ -113,6 +114,14 @@ char *xstrdup(const char *);$/;"	h	modifiedFile:a/st.h
@@ -78,7 +80,9 @@ $(OBJ)	Makefile	/^$(OBJ): config.h config.mk$/;"	t
 -1134,11 +1143,23	st-focus-20230610-68d1ad9.diff	/^@@ -1134,11 +1143,23 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
 -1148,7 +1169,7	st-focus-20230610-68d1ad9.diff	/^@@ -1148,7 +1169,7 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
 -1152,19 +1173,15	st-alpha-20220206-0.8.5.diff	/^@@ -1152,19 +1173,15 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
+-1166,8 +1178,9	st-hidecursor-0.8.3.diff	/^@@ -1166,8 +1178,9 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
 -1168,19 +1189,15	st-focus-20230610-68d1ad9.diff	/^@@ -1168,19 +1189,15 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
+-1181,7 +1194,10	st-hidecursor-0.8.3.diff	/^@@ -1181,7 +1194,10 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
 -120,8 +123,7	st-focus-20230610-68d1ad9.diff	/^@@ -120,8 +123,7 @@ static const char *colorname[] = {$/;"	h	modifiedFile:a/config.def.h
 -1214,6 +1214,9	st-boxdraw_v2-0.8.5.diff	/^@@ -1214,6 +1214,9 @@ tsetchar(Rune u, const Glyph *attr, int x, int y)$/;"	h	modifiedFile:a/st.c
 -1237,6 +1237,8	st-boxdraw_v2-0.8.5.diff	/^@@ -1237,6 +1237,8 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
@@ -105,8 +109,10 @@ $(OBJ)	Makefile	/^$(OBJ): config.h config.mk$/;"	t
 -16,7 +16,7	st-alpha-20220206-0.8.5.diff	/^@@ -16,7 +16,7 @@ PKG_CONFIG = pkg-config$/;"	h	modifiedFile:a/config.mk
 -16,7 +16,7	st-focus-20230610-68d1ad9.diff	/^@@ -16,7 +16,7 @@ PKG_CONFIG = pkg-config$/;"	h	modifiedFile:a/config.mk
 -1648,32 +1641,39	st-glyph-wide-support-20220411-ef05519.diff	/^@@ -1648,32 +1641,39 @@ xstartdraw(void)$/;"	h	modifiedFile:a/x.c
+-1673,6 +1689,8	st-hidecursor-0.8.3.diff	/^@@ -1673,6 +1689,8 @@ unmap(XEvent *ev)$/;"	h	modifiedFile:a/x.c
 -168,6 +168,42	st-xresources-20200604-9ba7ecf.diff	/^@@ -168,6 +168,42 @@ static unsigned int defaultattr = 11;$/;"	h	modifiedFile:a/config.def.h
 -1708,9 +1724,12	st-blinking_cursor-20211116-2f6e597.diff	/^@@ -1708,9 +1724,12 @@ xsetmode(int set, unsigned int flags)$/;"	h	modifiedFile:a/x.c
+-1793,6 +1811,12	st-hidecursor-0.8.3.diff	/^@@ -1793,6 +1811,12 @@ kpress(XEvent *ev)$/;"	h	modifiedFile:a/x.c
 -1798,12 +1798,22	st-focus-20230610-68d1ad9.diff	/^@@ -1798,12 +1798,22 @@ focus(XEvent *ev)$/;"	h	modifiedFile:a/x.c
 -1799,10 +1799,10	st-focus-20230610-68d1ad9.diff	/^@@ -1799,10 +1799,10 @@ focus(XEvent *ev)$/;"	h	modifiedFile:a/x.c
 -1800,7 +1799,7	st-focus-20230610-68d1ad9.diff	/^@@ -1800,7 +1799,7 @@ focus(XEvent *ev)$/;"	h	modifiedFile:a/x.c
@@ -147,6 +153,7 @@ $(OBJ)	Makefile	/^$(OBJ): config.h config.mk$/;"	t
 -45,5 +46,18	xrandrfontsize-0.8.4-20211224-2f6e597.diff	/^@@ -45,5 +46,18 @@ typedef struct {$/;"	h	modifiedFile:a/x.c
 -45,6 +46,19	st-xresources-20200604-9ba7ecf.diff	/^@@ -45,6 +46,19 @@ typedef struct {$/;"	h	modifiedFile:a/x.c
 -67,6 +67,18	st-boxdraw_v2-0.8.5.diff	/^@@ -67,6 +67,18 @@ static unsigned int blinktimeout = 800;$/;"	h	modifiedFile:a/config.def.h
+-698,6 +703,13	st-hidecursor-0.8.3.diff	/^@@ -698,6 +703,13 @@ brelease(XEvent *e)$/;"	h	modifiedFile:a/x.c
 -736,7 +738,7	st-alpha-20220206-0.8.5.diff	/^@@ -736,7 +738,7 @@ xresize(int col, int row)$/;"	h	modifiedFile:a/x.c
 -752,7 +754,7	st-focus-20230610-68d1ad9.diff	/^@@ -752,7 +754,7 @@ xresize(int col, int row)$/;"	h	modifiedFile:a/x.c
 -79,6 +79,7	st-focus-20230610-68d1ad9.diff	/^@@ -79,6 +79,7 @@ typedef union {$/;"	h	modifiedFile:a/st.h
@@ -406,6 +413,7 @@ a/x.c	st-blinking_cursor-20211116-2f6e597.diff	/^--- a\/x.c$/;"	m
 a/x.c	st-boxdraw_v2-0.8.5.diff	/^--- a\/x.c$/;"	m
 a/x.c	st-focus-20230610-68d1ad9.diff	/^--- a\/x.c$/;"	m
 a/x.c	st-glyph-wide-support-20220411-ef05519.diff	/^--- a\/x.c$/;"	m
+a/x.c	st-hidecursor-0.8.3.diff	/^--- a\/x.c$/;"	m
 a/x.c	st-w3m-0.8.3.diff	/^--- a\/x.c$/;"	m
 a/x.c	st-xresources-20200604-9ba7ecf.diff	/^--- a\/x.c$/;"	m
 a/x.c	st-xresources-signal-reloading-20220407-ef05519.diff	/^--- a\/x.c$/;"	m
@@ -531,8 +539,8 @@ f	st.h	/^	float f;$/;"	m	union:__anon7c9e12e2020a	typeref:typename:float
 fg	st.h	/^	uint32_t fg;      \/* foreground  *\/$/;"	m	struct:__anon7c9e12e20108	typeref:typename:uint32_t
 flags	x.c	/^	int flags;$/;"	m	struct:__anon0b88b7ae0e08	typeref:typename:int	file:
 focus	x.c	/^focus(XEvent *ev)$/;"	f	typeref:typename:void
-font	config.def.h	/^static char *font = "Agave Nerd Font:pixelsize=18:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
-font	config.h	/^static char *font = "Agave Nerd Font:pixelsize=18:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
+font	config.def.h	/^static char *font = "Mononoki Nerd Font:pixelsize=12:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
+font	config.h	/^static char *font = "Mononoki Nerd Font:pixelsize=12:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
 font	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon0b88b7ae0c08	typeref:typename:Font	file:
 font	x.c	/^	XftFont *font;$/;"	m	struct:__anon0b88b7ae0e08	typeref:typename:XftFont *	file:
 forcemousemod	config.def.h	/^static uint forcemousemod = ShiftMask;$/;"	v	typeref:typename:uint
