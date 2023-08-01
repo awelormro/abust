@@ -461,10 +461,10 @@ boxdata	boxdraw_data.h	/^static const unsigned short boxdata[256] = {$/;"	v	type
 boxdraw	config.def.h	/^const int boxdraw = 1;$/;"	v	typeref:typename:const int
 boxdraw	config.h	/^const int boxdraw = 1;$/;"	v	typeref:typename:const int
 boxdraw.o	Makefile	/^boxdraw.o: config.h st.h boxdraw_data.h$/;"	t
-boxdraw_bold	config.def.h	/^const int boxdraw_bold = 1;$/;"	v	typeref:typename:const int
+boxdraw_bold	config.def.h	/^const int boxdraw_bold = 0;$/;"	v	typeref:typename:const int
 boxdraw_bold	config.h	/^const int boxdraw_bold = 1;$/;"	v	typeref:typename:const int
 boxdraw_braille	config.def.h	/^const int boxdraw_braille = 0;$/;"	v	typeref:typename:const int
-boxdraw_braille	config.h	/^const int boxdraw_braille = 1;$/;"	v	typeref:typename:const int
+boxdraw_braille	config.h	/^const int boxdraw_braille = 0;$/;"	v	typeref:typename:const int
 boxdraw_xinit	boxdraw.c	/^boxdraw_xinit(Display *dpy, Colormap cmap, XftDraw *draw, Visual *vis)$/;"	f	typeref:typename:void
 boxdrawindex	boxdraw.c	/^boxdrawindex(const Glyph *g)$/;"	f	typeref:typename:ushort
 bpress	x.c	/^bpress(XEvent *e)$/;"	f	typeref:typename:void
